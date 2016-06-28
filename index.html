@@ -14,21 +14,44 @@
         <link rel="stylesheet" type="text/css" href="css/vendors/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendors/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendors/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
     </head>
-    <body>
+    <body ng-app="SuggestionBox">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="page">
 
+          <div class="header">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <h1><img src="http://images.clipartpanda.com/light-bulb-idea-icon-iconmonstr-light-bulb-18-icon.svg"
+                  height="60px" width="60px" /> Suggestion Box</h1>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- header -->
+
+          <div ng-view></div>
+
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendors/jquery-1.12.0.min.js"><\/script>')</script>
+
+        <!-- Modules -->
         <script src="js/app.js"></script>
 
-        
+        <!-- Controllers -->
+        <script src="js/controllers/HomeController.js"></script>
+        <script src="js/controllers/SuggestionsController.js"></script>
+
+        <!-- Services -->
+        <script src="js/services/suggestions.js"></script>
+
     </body>
 </html>

@@ -1,0 +1,93 @@
+@import "../bourbon/bourbon";
+@import "../helpers/variables";
+@import "../helpers/placeholders";
+
+body {
+  color: $text-color;
+  background-color: black;
+  font: {
+    family: 'Verdana', sans-serif;
+  }
+}
+
+.header {
+  max-width: 100%;
+  background-color: $dark-primary-color;
+
+  h1 {
+    line-height: 1em;
+    letter-spacing: em(1);
+  }
+
+  .pull-right{
+    margin-top: em(20);
+  }
+
+  li a {
+    @extend %btn-style;
+    @extend %btn-font;
+
+    &:hover {
+      background-color: $accent-color;
+      @extend %custom-border-style;
+      @extend %btn-font;
+    }
+  }
+}
+
+.main {
+
+  .container {
+    max-width: em(650);
+    margin-top: em(20);
+  }
+
+  .divider {
+    border: 0;
+    height: 1px;
+    background: $accent-color;
+  }
+
+  a, a:hover, a:visited {
+    @extend %link-style;
+  }
+
+  .text-info {
+    color: green;
+  }
+}
+
+.row {
+  .title {
+    font: {
+      size: 22px;
+      line-height: 1px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .upvotes, .comments {
+    font: {
+      size: 20px;
+      line-height: 1px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+/**
+input[type="text"]#suggestion {
+  &::-webkit-input-placeholder {
+    color: $text-color;
+  }
+  &::-moz-placeholder {
+    color: $text-color;
+  }
+  &:-ms-input-placeholder {
+    color: $text-color;
+  }
+  &:-moz-placeholder {
+    color: $text-color;
+  }
+}**/

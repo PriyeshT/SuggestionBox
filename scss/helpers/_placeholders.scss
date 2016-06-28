@@ -1,0 +1,37 @@
+%custom-border-style {
+  border: {
+    color: $accent-color;
+    radius: 0;
+  }
+}
+
+%btn-font {
+  font: {
+    family: 'Verdana', sans-serif;
+    size: em(18);
+    weight: normal;
+  }
+  line-height: em(18);
+  letter-spacing: em(1.2);
+}
+
+%btn-style {
+  background-color: transparent;
+  color: $text-color;
+  border: {
+    color: transparent;
+    raidus: 0;
+  }
+}
+
+%link-style {
+  text-decoration: none;
+  color: $text-color;
+}
+
+%input-style {
+  background: transparent;
+  border: 0;
+  border-color: transparent;
+  border-radius: 0;
+}

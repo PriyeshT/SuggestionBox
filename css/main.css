@@ -4,4 +4,76 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.header li a:hover {
+  border-color: #448AFF;
+  border-radius: 0; }
+
+.header li a, .header li a:hover {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  line-height: 1.125em;
+  letter-spacing: 0.075em; }
+
+.header li a {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: transparent;
+  border-raidus: 0; }
+
+.main a, .main a:hover, .main a:visited {
+  text-decoration: none;
+  color: #ffffff; }
+
+body {
+  color: #ffffff;
+  background-color: black;
+  font-family: 'Verdana', sans-serif; }
+
+.header {
+  max-width: 100%;
+  background-color: #455A64; }
+  .header h1 {
+    line-height: 1em;
+    letter-spacing: 0.0625em; }
+  .header .pull-right {
+    margin-top: 1.25em; }
+  .header li a:hover {
+    background-color: #448AFF; }
+
+.main .container {
+  max-width: 40.625em;
+  margin-top: 1.25em; }
+.main .divider {
+  border: 0;
+  height: 1px;
+  background: #448AFF; }
+.main .text-info {
+  color: green; }
+
+.row .title {
+  font-size: 22px;
+  font-line-height: 1px;
+  font-letter-spacing: 2px; }
+.row .upvotes, .row .comments {
+  font-size: 20px;
+  font-line-height: 1px;
+  font-letter-spacing: 1px; }
+
+/**
+input[type="text"]#suggestion {
+  &::-webkit-input-placeholder {
+    color: $text-color;
+  }
+  &::-moz-placeholder {
+    color: $text-color;
+  }
+  &:-ms-input-placeholder {
+    color: $text-color;
+  }
+  &:-moz-placeholder {
+    color: $text-color;
+  }
+}**/
+
 /*# sourceMappingURL=main.css.map */
